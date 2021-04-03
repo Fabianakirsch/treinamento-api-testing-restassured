@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: br.com.restassuredapitesting.runners.AllTests
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 15.719 s <<< FAILURE! - in br.com.restassuredapitesting.runners.AllTests
+excluirReservaSemAutorização(br.com.restassuredapitesting.tests.booking.tests.DeleteBookingTest)  Time elapsed: 3.696 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <403> but was <404>.
+
+	at br.com.restassuredapitesting.tests.booking.tests.DeleteBookingTest.excluirReservaSemAutorização(DeleteBookingTest.java:68)
+
+excluirReservaQueNãoExiste(br.com.restassuredapitesting.tests.booking.tests.DeleteBookingTest)  Time elapsed: 0.763 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <405>.
+
+	at br.com.restassuredapitesting.tests.booking.tests.DeleteBookingTest.excluirReservaQueNãoExiste(DeleteBookingTest.java:55)
+
+excluirReserva(br.com.restassuredapitesting.tests.booking.tests.DeleteBookingTest)  Time elapsed: 1.013 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <201>.
+
+	at br.com.restassuredapitesting.tests.booking.tests.DeleteBookingTest.excluirReserva(DeleteBookingTest.java:40)
+
+validarAlterarUmaReservaUsandoBasicAuth(br.com.restassuredapitesting.tests.booking.tests.PutBookingTest)  Time elapsed: 0.658 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at br.com.restassuredapitesting.tests.booking.tests.PutBookingTest.validarAlterarUmaReservaUsandoBasicAuth(PutBookingTest.java:49)
+
+validarAlterarUmaReservaQueNãoExiste(br.com.restassuredapitesting.tests.booking.tests.PutBookingTest)  Time elapsed: 0.707 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <405>.
+
+	at br.com.restassuredapitesting.tests.booking.tests.PutBookingTest.validarAlterarUmaReservaQueNãoExiste(PutBookingTest.java:84)
+
+validarStatusAPI(br.com.restassuredapitesting.tests.ping.tests.GetPingTest)  Time elapsed: 0.317 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <201>.
+
+	at br.com.restassuredapitesting.tests.ping.tests.GetPingTest.validarStatusAPI(GetPingTest.java:33)
+
